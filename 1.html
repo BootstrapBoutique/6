@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>www.bootstrap.boutique</title>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="libs/fuelux/fuelux.min.js"></script>
+    <script src="libs/fuelux/js/tree.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/fuelux/fuelux.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+  </head>
+
+  <body>
+    <small>Get more @<a href="http://bootstrap.boutique"> Bootstrap Boutique</a></small>
+
+    <div class="container" style="margin-top: 20px;">
+      <div class="row fuelux">
+        <div class="col-md-10">
+
+
+          <div class="form-group">
+            <ul id="treeIllustration" role="tree" class="tree">
+              <li aria-expanded="false" role="treeitem" data-template="treebranch" class="tree-branch hide">
+                <div class="tree-branch-header">
+                  <button class="tree-branch-name" type="button">
+                    <span class="glyphicon icon-caret glyphicon-play"></span>
+                    <span class="glyphicon icon-folder glyphicon-folder-close"></span>
+                    <span class="tree-label"></span>
+                  </button>
+                </div>
+                <ul role="group" class="tree-branch-children"></ul>
+                <div role="alert" class="tree-loader hidden">Loading...</div>
+              </li>
+              <li role="treeitem" data-template="treeitem" class="tree-item hide">
+                <button class="tree-item-name" type="button">
+                  <span class="glyphicon icon-item fueluxicon-bullet"></span>
+                  <span class="tree-label"></span>
+                </button>
+              </li>
+              <li role="treeitem" data-template="treeitem" class="tree-item" id="item2" aria-labelledby="item2-label">
+                <button class="tree-item-name" type="button">
+                  <span class="glyphicon icon-item fueluxicon-bullet"></span>
+                  <span class="tree-label">Waterfall</span>
+                </button>
+              </li><li aria-expanded="true" role="treeitem" data-template="treebranch" class="tree-branch tree-open" id="folder1" aria-labelledby="folder1-label">
+                <div class="tree-branch-header">
+                  <button class="tree-branch-name" type="button">
+                    <span class="glyphicon icon-caret glyphicon-play"></span>
+                    <span class="glyphicon icon-folder glyphicon-folder-open"></span>
+                    <span class="tree-label" id="folder1-label">Ascending and Descending</span>
+                  </button>
+                </div>
+                <ul role="group" class="tree-branch-children"><li role="treeitem" data-template="treeitem" class="tree-item" id="item2" aria-labelledby="item2-label">
+                    <button class="tree-item-name" type="button">
+                      <span class="glyphicon icon-item fueluxicon-bullet"></span>
+                      <span class="tree-label">Waterfall</span>
+                    </button>
+                  </li><li aria-expanded="true" role="treeitem" data-template="treebranch" class="tree-branch tree-open" id="folder1" aria-labelledby="folder1-label">
+                    <div class="tree-branch-header">
+                      <button class="tree-branch-name" type="button">
+                        <span class="glyphicon icon-caret glyphicon-play"></span>
+                        <span class="glyphicon icon-folder glyphicon-folder-open"></span>
+                        <span class="tree-label" id="folder1-label">Ascending and Descending</span>
+                      </button>
+                    </div>
+                    <ul role="group" class="tree-branch-children"><li role="treeitem" data-template="treeitem" class="tree-item" id="item2" aria-labelledby="item2-label">
+                        <button class="tree-item-name" type="button">
+                          <span class="glyphicon icon-item fueluxicon-bullet"></span>
+                          <span class="tree-label">Waterfall</span>
+                        </button>
+                      </li><li aria-expanded="false" role="treeitem" data-template="treebranch" class="tree-branch" id="folder1" aria-labelledby="folder1-label">
+                        <div class="tree-branch-header">
+                          <button class="tree-branch-name" type="button">
+                            <span class="glyphicon icon-caret glyphicon-play"></span>
+                            <span class="glyphicon icon-folder glyphicon-folder-close"></span>
+                            <span class="tree-label" id="folder1-label">Ascending and Descending</span>
+                          </button>
+                        </div>
+                        <ul role="group" class="tree-branch-children"></ul>
+                        <div role="alert" class="tree-loader hidden">Loading...</div>
+                      </li><li role="treeitem" data-template="treeitem" class="tree-item" id="item1" aria-labelledby="item1-label" data-icon="glyphicon glyphicon-file">
+                        <button class="tree-item-name" type="button">
+                          <span class="icon-item glyphicon glyphicon-file"></span>
+                          <span class="tree-label">Sky and Water I (with custom icon)</span>
+                        </button>
+                      </li></ul>
+                    <div role="alert" class="tree-loader hidden">Loading...</div>
+                  </li><li role="treeitem" data-template="treeitem" class="tree-item" id="item1" aria-labelledby="item1-label" data-icon="glyphicon glyphicon-file">
+                    <button class="tree-item-name" type="button">
+                      <span class="icon-item glyphicon glyphicon-file"></span>
+                      <span class="tree-label">Sky and Water I (with custom icon)</span>
+                    </button>
+                  </li></ul>
+                <div role="alert" class="tree-loader hidden">Loading...</div>
+              </li><li role="treeitem" data-template="treeitem" class="tree-item" id="item1" aria-labelledby="item1-label" data-icon="glyphicon glyphicon-file">
+                <button class="tree-item-name" type="button">
+                  <span class="icon-item glyphicon glyphicon-file"></span>
+                  <span class="tree-label">Sky and Water I (with custom icon)</span>
+                </button>
+              </li></ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="1.js"></script>
+
+
+
+
+  </body>
+</html>
